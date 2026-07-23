@@ -42,8 +42,8 @@ Call display() to show the complete bill with discounts.
  ```
 /*
 Program to implement a Inheritance and Aggregation using Java
-Developed by: Sukirthana.M
-RegisterNumber:  212224220112
+Developed by: Deepshika hemanth kumar
+RegisterNumber:  212224220020
 */
 ```
 
