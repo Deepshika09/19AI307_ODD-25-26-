@@ -1,28 +1,31 @@
-# Ex.No:1(E) STRINGS AND MATH FUNCTION
+# Ex.No:1(D) ARRAYS
 
 ## QUESTION:
-Write a Java program to reverse a given string.
+Write a Java Program to Find the Average of Array Elements.
 
 ## AIM:
-To write a Java program that reverses a given string entered by the user.
+To write a Java program that calculates the average of elements in an array.
 
 ## ALGORITHM :
-1.Start the program and read a string input from the user.
+1.Start the program and read the number of elements n from the user.
 
-2.Create a StringBuilder object with the input string.
+2.Create an array of size n and read n integer elements from the user into the array.
 
-3.Use the reverse() method of StringBuilder to reverse the string.
+3.Initialize a variable sum to 0 and add all array elements to sum using a loop.
 
-4.Convert the reversed StringBuilder back to a string.
+4.Calculate the average by dividing sum by n and store it in a double variable.
 
-5.Display the reversed string and stop the program.
+5.Display the average value and stop the program.
+
+
+
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Strings and Math Function using Java
+Program to implement a Array concept using Java
 Developed by: Deepshika hemanth kumar
-RegisterNumber:  212224220020
+RegisterNumber: 212224220020
 */
 ```
 
@@ -30,13 +33,21 @@ RegisterNumber:  212224220020
 ```
 import java.util.Scanner;
 
-public class ReverseString {
+public class AverageArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
-        String reversed = new StringBuilder(str).reverse().toString();
-        System.out.println("Reversed string: " + reversed);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
         scanner.close();
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        double average = (double) sum / n;
+        System.out.printf("The average of elements is %.2f\n", average);
     }
 }
 ```
@@ -45,11 +56,8 @@ public class ReverseString {
 
 
 
-
 ## OUTPUT:
-
-<img width="842" height="317" alt="image" src="https://github.com/user-attachments/assets/c4de7ccb-2175-47ae-bd3e-aded08e8f6c0" />
-
+<img width="971" height="567" alt="image" src="https://github.com/user-attachments/assets/8201282c-75a8-4577-bf92-c6c8004a7f09" />
 
 
 ## RESULT:
